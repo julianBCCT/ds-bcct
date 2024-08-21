@@ -1,0 +1,36 @@
+.assets {
+  section {
+    align-items: center;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-bottom: 80px;
+    .gris,
+    .menta,
+    .limon {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 80%;
+      }
+    }
+    .gris {
+      background-color: var(--gris1);
+    }
+    .menta-logotipo {
+      background-color: var(--menta);
+      border-radius: 8px;
+      padding: 8px;
+    }
+    .menta {
+      background-color: var(--menta);
+    }
+    .limon {
+      background-color: var(--limon);
+    }
+  }
+}

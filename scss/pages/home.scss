@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 0 0 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .info {
+    max-width: 600px;
+    height: min-content;
+    h1,
+    h2 {
+      color: #fff;
+    }
+    svg {
+      margin-bottom: 30px;
+    }
+    a {
+      margin: 30px auto;
+    }
+  }
+}
+.antesde {
+  h3 {
+    margin-bottom: 15px;
+  }
+}

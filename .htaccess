@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /design-system-bcct/
+
+# Check if the requested file or directory exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Spanish URL rewriting
+RewriteRule ^s/([^/]+)/?$ set/$1.php?lang=es [L,QSA]
+RewriteRule ^g/([^/]+)/?$ get/$1.php?lang=es [L,QSA]
+RewriteRule ^b/([^/]+)/?$ boxes/$1.php?lang=es [L,QSA]
+
+RewriteRule ^$ index.php [L,QSA]
+RewriteRule ^antes-de-empezar$ antesde.php [L,QSA]
+RewriteRule ^tipografia$ tipografia.php [L,QSA]
+RewriteRule ^iconos$ iconos.php [L,QSA]
+RewriteRule ^colores$ colores.php [L,QSA]
+RewriteRule ^assets$ assets.php [L,QSA]
+RewriteRule ^alertas-estados$ alerts.php [L,QSA]
+RewriteRule ^botones$ buttons.php [L,QSA]
+RewriteRule ^campos$ inputs.php [L,QSA]
+RewriteRule ^cards$ cards.php [L,QSA]
+RewriteRule ^componentes-ui$ ui_components.php [L,QSA]
+RewriteRule ^drop-zones$ dropzones.php [L,QSA]
+RewriteRule ^headers-barras$ headers_bars.php [L,QSA]
+RewriteRule ^menus$ menus.php [L,QSA]
+RewriteRule ^sombras-formas$ shadow_forms.php [L,QSA]
